@@ -13,3 +13,4 @@ C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\refint\RefTrack.Application.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.pdb
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\ref\RefTrack.Application.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.sourcelink.json

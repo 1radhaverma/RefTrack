@@ -119,3 +119,4 @@ C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.UnitTest\obj\Debug\net9.
 C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.UnitTest\obj\Debug\net9.0\RefTrack.UnitTest.pdb
 C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.UnitTest\obj\Debug\net9.0\RefTrack.UnitTest.genruntimeconfig.cache
 C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.UnitTest\obj\Debug\net9.0\ref\RefTrack.UnitTest.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.UnitTest\obj\Debug\net9.0\RefTrack.UnitTest.sourcelink.json

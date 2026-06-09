@@ -9,3 +9,4 @@ C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\Re
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\refint\RefTrack.Domain.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.pdb
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\ref\RefTrack.Domain.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.sourcelink.json

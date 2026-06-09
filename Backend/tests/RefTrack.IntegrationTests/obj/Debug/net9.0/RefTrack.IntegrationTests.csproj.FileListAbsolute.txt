@@ -167,3 +167,6 @@ C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\obj\Deb
 C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\obj\Debug\net9.0\RefTrack.IntegrationTests.genruntimeconfig.cache
 C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\obj\Debug\net9.0\ref\RefTrack.IntegrationTests.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\bin\Debug\net9.0\Scalar.AspNetCore.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\tests\RefTrack.IntegrationTests\obj\Debug\net9.0\RefTrack.IntegrationTests.sourcelink.json
