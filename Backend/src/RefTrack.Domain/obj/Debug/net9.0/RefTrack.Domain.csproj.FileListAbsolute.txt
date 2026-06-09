@@ -1,0 +1,11 @@
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\bin\Debug\net9.0\RefTrack.Domain.deps.json
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\bin\Debug\net9.0\RefTrack.Domain.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\bin\Debug\net9.0\RefTrack.Domain.pdb
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.AssemblyInfoInputs.cache
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.AssemblyInfo.cs
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.csproj.CoreCompileInputs.cache
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\refint\RefTrack.Domain.dll
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\RefTrack.Domain.pdb
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Domain\obj\Debug\net9.0\ref\RefTrack.Domain.dll

@@ -1,0 +1,6 @@
+@RefTrack.API_HostAddress = http://localhost:5099
+
+GET {{RefTrack.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
