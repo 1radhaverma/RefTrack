@@ -16,3 +16,5 @@ C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Infrastructure\obj\Debug\n
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Infrastructure\obj\Debug\net9.0\RefTrack.Infrastructure.pdb
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Infrastructure\obj\Debug\net9.0\ref\RefTrack.Infrastructure.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Infrastructure\obj\Debug\net9.0\RefTrack.Infrastructure.sourcelink.json
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Infrastructure\bin\Debug\net9.0\RefTrack.Infrastructure.runtimeconfig.json
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Infrastructure\obj\Debug\net9.0\RefTrack.Infrastructure.genruntimeconfig.cache
