@@ -54,6 +54,7 @@ namespace RefTrack.API.Middleware
                         message = "An unexpected error occurred"
                     }));
             }
+
         }
     }
 }
