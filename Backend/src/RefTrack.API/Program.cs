@@ -38,7 +38,7 @@ builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
 
 // Services
 builder.Services.AddScoped<ITokenService, JwtTokenService>();
-builder.Services.AddScoped<INotificationService, SignalRNotificationService>();
+builder.Services.AddSingleton<INotificationService, SignalRNotificationService>();
 
 // Background service
 builder.Services.AddHostedService<ReminderService>();

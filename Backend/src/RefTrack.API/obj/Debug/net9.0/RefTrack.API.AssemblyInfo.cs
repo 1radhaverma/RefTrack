@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RefTrack.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d3f7fd45222c94108121bea66424489cf7a453d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb14582fe55682332989bb6b91e319d49ebf3b7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("RefTrack.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RefTrack.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

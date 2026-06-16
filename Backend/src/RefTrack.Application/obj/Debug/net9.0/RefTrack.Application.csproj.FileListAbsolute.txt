@@ -8,9 +8,9 @@ C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.AssemblyInfoInputs.cache
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.AssemblyInfo.cs
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.csproj.CoreCompileInputs.cache
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.sourcelink.json
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.8E637674.Up2Date
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\refint\RefTrack.Application.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.pdb
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\ref\RefTrack.Application.dll
-C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.Application\obj\Debug\net9.0\RefTrack.Application.sourcelink.json

@@ -3,56 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using RefTrack.Application.Interface;
 using RefTrack.Domain.Entities;
+using RefTrack.Domain.Enums;
+using RefTrack.Infrastructure.Persistence;
 
 namespace RefTrack.Infrastructure.Rerpositories
 {
-    public class ReferrerRepository : IReferrerRepository
-    {
-        public Task AddAsync(Referrer entity, CancellationToken ct = default)
+        public class ReferrerRepository
+            : GenericRerpository<Referrer>, IReferrerRepository
         {
-            throw new NotImplementedException();
-        }
+            public ReferrerRepository(AppDBContext db) : base(db) { }
 
-        public void Delete(Referrer entity)
-        {
-            throw new NotImplementedException();
-        }
+            public async Task<List<Referrer>> GetGhostedAfterDaysAsync(
+                int days, CancellationToken ct = default)
+                => await _set
+                    .Where(r =>
+                        r.Status == OutreachStatus.Sent
+                        && r.LastContactedAt.HasValue
+                        && r.LastContactedAt.Value <= DateTime.UtcNow.AddDays(-days))
+                    .ToListAsync(ct);
 
-        public Task<List<Referrer>> GetAllAsync(CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
-        }
+            public async Task<List<Referrer>> GetByJobRoleAsync(
+                Guid jobRoleId, CancellationToken ct = default)
+                => await _set
+                    .Where(r => r.JobRoleId == jobRoleId)
+                    .OrderBy(r => r.Status.ToString())
+                    .ToListAsync(ct);
 
-        public Task<Referrer> GetByIdAsync(Guid id, CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
+            public async Task<List<Referrer>> GetByUserAsync(
+                Guid userId, CancellationToken ct = default)
+                => await _set
+                    .Where(r => r.UserId == userId)
+                    .OrderByDescending(r => r.CreatedAt)
+                    .ToListAsync(ct);
         }
-
-        public Task<List<Referrer>> GetByJobRoleAsync(Guid jobRoleId, CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<Referrer>> GetByUserAsync(Guid userId, CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<Referrer>> GetGhostedAfterDaysAsync(int days, CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> SaveChangesAsync(CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(Referrer entity)
-        {
-            throw new NotImplementedException();
-        }
-    }
 }

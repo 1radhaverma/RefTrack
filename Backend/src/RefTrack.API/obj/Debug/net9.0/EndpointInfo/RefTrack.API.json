@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "RefTrack.API",
+    "version": "1.0"
+  },
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Enter JWT",
+        "scheme": "bearer"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
