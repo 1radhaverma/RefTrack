@@ -43,10 +43,11 @@ namespace RefTrack.Infrastructure.Rerpositories
             throw new NotImplementedException();
         }
 
-        public Task<List<Company>> GetByUserAsync(Guid userId, CancellationToken ct = default)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Company>> GetByUserAsync(Guid userId, CancellationToken ct = default)
+ => await _set
+ .Where(c => c.UserId == userId)
+ .OrderBy(c => c.Tier)
+ .ToListAsync(ct);
 
         public Task<Company?> GetWithRolesAsync(Guid id, CancellationToken ct = default)
         {

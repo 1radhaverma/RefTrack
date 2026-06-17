@@ -189,3 +189,4 @@ C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.API\obj\Debug\net9.0\RefTr
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.API\obj\Debug\net9.0\RefTrack.API.genruntimeconfig.cache
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.API\obj\Debug\net9.0\ref\RefTrack.API.dll
 C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.API\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\A11278\Desktop\RefTrack\Backend\src\RefTrack.API\bin\Debug\net9.0\BCrypt.Net-Next.dll

@@ -12,8 +12,7 @@ public class AppUser : BaseEntity
 
     private AppUser() { }
 
-    public static AppUser Create(
-        string email, string displayName, string passwordHash)
+    public static AppUser Create(string email, string displayName, string passwordHash)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(email);
         return new AppUser

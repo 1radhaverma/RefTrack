@@ -1,60 +1,22 @@
-// Features/Companies/Commands/CreateCompanyCommand.cs
-using FluentValidation;
 using MediatR;
 using RefTrack.Application.Common.DTOs;
 using RefTrack.Application.Interface;
 using RefTrack.Application.Mappings;
-using RefTrack.Domain.Entities;
-using RefTrack.Domain.Enums;
 
-namespace RefTrack.Application.Features.Companies.Commands;
-
-// SRP — record holds data, Handler holds logic, Validator holds rules
-// DIP — Handler injects ICompanyRepository, not concrete class
-public record CreateCompanyCommand(
-    string Name,
-    string CareerPageUrl,
-    string Tier,
-    Guid UserId) : IRequest<CompanyDto>;
-
-public class CreateCompanyValidator
-    : AbstractValidator<CreateCompanyCommand>
+namespace RefTrack.Application.Features.Applications.Commands;
+public record CreateApplicationCommand(
+ Guid JobRoleId, Guid UserId) : IRequest<ApplicationDto>;
+public class CreateApplicationHandler
+ : IRequestHandler<CreateApplicationCommand, ApplicationDto>
 {
-    public CreateCompanyValidator()
+    private readonly IApplicationRepository _repo;
+    public CreateApplicationHandler(IApplicationRepository repo) => _repo = repo;
+    public async Task<ApplicationDto> Handle(
+    CreateApplicationCommand cmd, CancellationToken ct)
     {
-        RuleFor(x => x.Name)
-            .NotEmpty().WithMessage("Company name is required.")
-            .MaximumLength(200);
-        RuleFor(x => x.CareerPageUrl)
-            .NotEmpty()
-            .Must(url => Uri.TryCreate(url, UriKind.Absolute, out _))
-            .WithMessage("Must be a valid URL.");
-        RuleFor(x => x.UserId).NotEmpty();
-    }
-}
-
-public class CreateCompanyHandler
-    : IRequestHandler<CreateCompanyCommand, CompanyDto>
-{
-    // DIP — depends on interface, not concrete repo
-    private readonly ICompanyRepository _repo;
-
-    public CreateCompanyHandler(ICompanyRepository repo)
-        => _repo = repo;
-
-    public async Task<CompanyDto> Handle(
-        CreateCompanyCommand cmd, CancellationToken ct)
-    {
-        // Parse tier from string
-        var tier = Enum.Parse<CompanyTier>(cmd.Tier, true);
-
-        // Factory method creates entity — OOP
-        var company = Company.Create(
-            cmd.Name, cmd.CareerPageUrl, tier, cmd.UserId);
-
-        await _repo.AddAsync(company, ct);
+        var app = Application.Create(cmd.JobRoleId, cmd.UserId);
+        await _repo.AddAsync(app, ct);
         await _repo.SaveChangesAsync(ct);
-
-        return company.ToDto();
+        return app.ToDto();
     }
 }

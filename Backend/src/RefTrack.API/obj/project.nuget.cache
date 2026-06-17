@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/2jbr+RRwgM=",
+  "dgSpecHash": "kwoW4kwf7Gk=",
   "success": true,
   "projectFilePath": "C:\\Users\\A11278\\Desktop\\RefTrack\\Backend\\src\\RefTrack.API\\RefTrack.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\A11278\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
     "C:\\Users\\A11278\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\A11278\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\A11278\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -18,6 +18,14 @@
           "RefTrack.IntegrationTests.dll": {}
         }
       },
+      "BCrypt.Net-Next/4.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "coverlet.collector/6.0.2": {},
       "FluentValidation/12.1.1": {
         "runtime": {
@@ -1403,6 +1411,7 @@
       "xunit.runner.visualstudio/2.8.2": {},
       "RefTrack.API/1.0.0": {
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.4",
           "Microsoft.AspNetCore.OpenApi": "9.0.10",
           "RefTrack.Application": "1.0.0",
@@ -1471,6 +1480,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net-Next/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1rjyVK+/YJnCElALjVNt/aUPIIRoFocFZzblsiFo2giA3WVYExk/E5UT6i4RqEHwIwEwoQHt02I1llaEIQ59eQ==",
+      "path": "bcrypt.net-next/4.0.0",
+      "hashPath": "bcrypt.net-next.4.0.0.nupkg.sha512"
     },
     "coverlet.collector/6.0.2": {
       "type": "package",
