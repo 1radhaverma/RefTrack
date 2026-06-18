@@ -1,5 +1,5 @@
 ﻿namespace RefTrack.API.DTOs
 {
-    public class CreateApplicationRequest(Guid JobRoleId, string? Notes);
+    public record CreateApplicationRequest(Guid JobRoleId, string? Notes);
 
 }

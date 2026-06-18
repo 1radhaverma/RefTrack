@@ -1,5 +1,5 @@
 ﻿namespace RefTrack.API.DTOs
 {
-    public class MoveApplicationRequestt(Guid ApplicationId, string Status);
+    public record MoveApplicationRequest(Guid ApplicationId, string Status);
 
 }

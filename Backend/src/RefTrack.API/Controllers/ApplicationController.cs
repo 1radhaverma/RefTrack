@@ -19,11 +19,11 @@ namespace RefTrack.API.Controllers
         public async Task<IActionResult> GetSummary(CancellationToken ct)
         => Ok(await _mediator.Send(new GetPipelineSummaryQuery(CurrentUserId), ct));
         [HttpPost]
-        public async Task<IActionResult> Create(CreateApplicationRequest req, CancellationToken
-       ct)
-        => Ok(await _mediator.Send( new CreateApplicationCommand(req.JobRoleId, req.Notes, CurrentUserId), ct));
-       // PATCH api/applications/move — move to next pipeline stage
-       [HttpPatch("move")]
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateApplicationRequest req, CancellationToken ct)
+    => Ok(await _mediator.Send(new CreateApplicationCommand(req.JobRoleId, CurrentUserId), ct)); 
+        // PATCH api/applications/move — move to next pipeline stage
+        [HttpPatch("move")]
         public async Task<IActionResult> Move(MoveApplicationRequest req, CancellationToken ct)
         => Ok(await _mediator.Send(
         new MoveApplicationCommand(req.ApplicationId, req.Status, CurrentUserId), ct));

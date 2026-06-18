@@ -353,6 +353,10 @@
               "target": "Package",
               "version": "[10.0.8, )"
             },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.0, )"

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using NPOI.SS.Formula.Functions;
 using RefTrack.Application.Interface;
 using RefTrack.Domain.Entities;
 using RefTrack.Domain.Enums;
@@ -15,6 +16,7 @@ namespace RefTrack.Infrastructure.Rerpositories
     {
 
         private readonly AppDBContext _db;
+        protected readonly DbSet<T> _set;
 
         public CompanyRepository(AppDBContext db)=> _db = db;
 
@@ -44,7 +46,7 @@ namespace RefTrack.Infrastructure.Rerpositories
         }
 
         public async Task<List<Company>> GetByUserAsync(Guid userId, CancellationToken ct = default)
- => await _set
+ => await _db.Set<Company>()
  .Where(c => c.UserId == userId)
  .OrderBy(c => c.Tier)
  .ToListAsync(ct);
