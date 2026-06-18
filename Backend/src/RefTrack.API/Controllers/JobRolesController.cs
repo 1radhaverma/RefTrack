@@ -12,6 +12,7 @@ namespace RefTrack.API.Controllers
         private readonly IMediator _mediator;
         public JobRolesController(IMediator mediator) => _mediator = mediator;
         // GET api/jobroles?companyId=xxx
+        
         [HttpGet]
         public async Task<IActionResult> GetByCompany([FromQuery] Guid companyId,
        CancellationToken ct)
