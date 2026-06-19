@@ -1,6 +1,6 @@
 import { Component, inject, computed } from '@angular/core';
-import { ApplicationService } from '../../core/services/application.service';
-import { CompanyService } from '../../core/services/company.service';
+import { ApplicationService } from '../../../core/services/application.service';
+import { CompanyService } from '../../../core/services/company.service';
 @Component({ selector: 'app-dashboard', standalone: true,
  template: `
  <div class="space-y-6">

@@ -10,7 +10,7 @@ import { JobRoleService } from '../../../core/services/job-role.service';
  class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">+
 Add Job Role</button>
  </div>
- @if (showForm()) {
+ @if (showForm()) {  
  <div class="bg-white border border-gray-200 rounded-xl p-6 space-y-3">
  <input [(ngModel)]="title" placeholder="Job title"
  class="w-full border rounded-lg px-3 py-2 text-sm" />
@@ -57,20 +57,25 @@ hover:underline">Delete</button>
  `
 })
 export class JobRoleListComponent {
+
  svc = inject(JobRoleService);
  showForm = signal(false); title = ''; jobUrl = ''; jobDescription = ''; companyId = '';
 tier = 'Stretch';
- create() {
+ 
+create() {
  this.svc.create({ title: this.title, jobUrl: this.jobUrl, jobDescription: 
 this.jobDescription, tier: this.tier, companyId: this.companyId })
  .subscribe(() => { this.svc.jobRoles.reload(); this.showForm.set(false); });
  }
  apply(id: string) { this.svc.apply(id).subscribe(() => this.svc.jobRoles.reload()); }
  delete(id: string) { this.svc.delete(id).subscribe(() => this.svc.jobRoles.reload()); }
+
  tierBadge(t: string) {
- const m: Record<string,string> = { Dream: 'bg-purple-100 text-purple-700 px-2 py-0.5 
-rounded text-xs', Stretch: 'bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs', Safe:
-'bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs' };
- return m[t] ?? 'bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-xs';
- }
+  const badges: Record<string, string> = {
+    Dream:   'bg-purple-100 text-purple-700 px-2 py-0.5 rounded text-xs',
+    Stretch: 'bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-xs',
+    Safe:    'bg-green-100 text-green-700 px-2 py-0.5 rounded text-xs',
+  };
+  return badges[t] ?? 'bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-xs';
+}
 }

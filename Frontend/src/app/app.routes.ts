@@ -13,14 +13,14 @@ import('./features/auth/register/register.component').then(m => m.RegisterCompon
  { path: 'dashboard', canActivate: [authGuard], loadComponent: () => 
 import('./features/dashboard/dashboard.component').then(m => m.DashboardComponent) },
  { path: 'companies', canActivate: [authGuard], loadComponent: () => 
-import('./features/companies/company-list/company-list.component').then(m => 
-m.CompanyListComponent) },
+import('./features/applications/application-list/application-list.component').then(m => 
+m.ApplicationListComponent) },
  { path: 'jobroles', canActivate: [authGuard], loadComponent: () => 
 import('./features/job-roles/job-role-list/job-role-list.component').then(m => 
 m.JobRoleListComponent) },
- { path: 'referrers', canActivate: [authGuard], loadComponent: () => 
-import('./features/referrers/referrer-list/referrer-list.component').then(m => 
-m.ReferrerListComponent) },
+//  { path: 'referrers', canActivate: [authGuard], loadComponent: () => 
+// import('./features/referrers/referrer-list/referrer-list.component').then(m => 
+// m.ReferrerListComponent) },
  { path: 'applications', canActivate: [authGuard], loadComponent: () => 
 import('./features/applications/application-list/application-list.component').then(m => 
 m.ApplicationListComponent) },
