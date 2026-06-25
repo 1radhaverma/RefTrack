@@ -9,7 +9,7 @@ import { SignalRService } from '../../../core/services/signalr.service';
  <div class="bg-white p-8 rounded-xl shadow w-full max-w-md">
  <h1 class="text-2xl font-bold text-gray-800 mb-6">Sign in to RefTrack</h1>
  @if (error()) {
- <div class="bg-red-50 text-red-600 px-4 py-2 rounded mb-4 textsm">{{ error() }}</div>
+ <div class="bg-red-50 text-red-600 px-4 py-2 rounded mb-4 text sm">{{ error() }}</div>
  }
  <form (ngSubmit)="login()">
  <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>

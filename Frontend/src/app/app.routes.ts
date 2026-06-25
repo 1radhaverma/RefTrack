@@ -18,9 +18,9 @@ m.ApplicationListComponent) },
  { path: 'jobroles', canActivate: [authGuard], loadComponent: () => 
 import('./features/job-roles/job-role-list/job-role-list.component').then(m => 
 m.JobRoleListComponent) },
-//  { path: 'referrers', canActivate: [authGuard], loadComponent: () => 
-// import('./features/referrers/referrer-list/referrer-list.component').then(m => 
-// m.ReferrerListComponent) },
+// { path: 'referrers', canActivate: [authGuard], loadComponent: () => 
+//  import('./features/referrers/referrer-list/referrer-list.component').then(m => 
+//  m.ReferrerListComponent) },
  { path: 'applications', canActivate: [authGuard], loadComponent: () => 
 import('./features/applications/application-list/application-list.component').then(m => 
 m.ApplicationListComponent) },
