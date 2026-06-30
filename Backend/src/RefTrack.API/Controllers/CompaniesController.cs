@@ -10,6 +10,7 @@ namespace RefTrack.API.Controllers
     public class CompaniesController : BaseController
     {
         private readonly IMediator _mediator;
+        
         public CompaniesController(IMediator mediator) => _mediator = mediator;
         [HttpGet]
         public async Task<IActionResult> GetAll(CancellationToken ct)
@@ -18,9 +19,9 @@ namespace RefTrack.API.Controllers
         public async Task<IActionResult> GetById(Guid id, CancellationToken ct)
         => Ok(await _mediator.Send(new GetCompanyByIdQuery(id, CurrentUserId), ct));
         [HttpPost]
-        public async Task<IActionResult> Create(CreateCompanyRequest req, CancellationToken ct)
+        public async Task<IActionResult> Create([FromBody] CreateCompanyRequest req, CancellationToken ct)
         => Ok(await _mediator.Send(
-        new CreateCompanyCommand(req.Name, req.Domain, req.Tier, CurrentUserId), ct));
+        new CreateCompanyCommand(req.Name, req.CareerPageUrl, req.Tier, CurrentUserId), ct));
         [HttpPatch("{id:guid}/blacklist")]
         public async Task<IActionResult> Blacklist(Guid id, CancellationToken ct)
         => Ok(await _mediator.Send(new BlacklistCompanyCommand(id, CurrentUserId), ct));

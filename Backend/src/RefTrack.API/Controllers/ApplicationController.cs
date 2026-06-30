@@ -7,6 +7,7 @@ using RefTrack.Application.Features.Applications.Queries;
 namespace RefTrack.API.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     public class ApplicationController : BaseController
     {
         private readonly IMediator _mediator;

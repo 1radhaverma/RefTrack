@@ -1,7 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ReferrerService } from '../../../core/services/referrer.service';
- 
+
+
 @Component({
   selector: 'app-referrer-list',
   standalone: true,
@@ -35,7 +36,7 @@ import { ReferrerService } from '../../../core/services/referrer.service';
         <p class="text-gray-400 text-sm">Loading...</p>
       } @else if (svc.referrers.hasValue()) {
         <div class="space-y-3">
-          @for (r of svc.referrers.value() ?? []; track r.id) {
+          @for (r of svc.referrers.value(); track r.id) {
             <div class="bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-between">
               <div>
                 <p class="font-medium text-gray-800">{{ r.name }}</p>

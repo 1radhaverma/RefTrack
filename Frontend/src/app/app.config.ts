@@ -8,10 +8,8 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
-    provideHttpClient(
- withFetch(), // REQUIRED for httpResource
+    provideHttpClient( // REQUIRED for httpResource
  withInterceptors([authInterceptor])
-
  ), 
   ],
 };

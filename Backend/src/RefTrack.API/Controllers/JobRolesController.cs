@@ -22,10 +22,11 @@ namespace RefTrack.API.Controllers
         public async Task<IActionResult> GetAll(CancellationToken ct)
         => Ok(await _mediator.Send(new GetAllJobRolesQuery(CurrentUserId), ct));
         [HttpPost]
-        public async Task<IActionResult> Create(CreateJobRoleRequest req, CancellationToken ct)
-        => Ok(await _mediator.Send(
+        public async Task<IActionResult> Create([FromBody] CreateJobRoleRequest req, CancellationToken ct)
+         => Ok(await _mediator.Send(
         new CreateJobRoleCommand(req.Title, req.JobUrl, req.JobDescription,
         req.Tier, req.CompanyId, CurrentUserId), ct));
+      
         [HttpPatch("{id:guid}/apply")]
         public async Task<IActionResult> Apply(Guid id, CancellationToken ct)
         => Ok(await _mediator.Send(new ApplyToJobCommand(id, CurrentUserId), ct));

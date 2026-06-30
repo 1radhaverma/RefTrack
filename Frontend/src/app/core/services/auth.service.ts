@@ -16,6 +16,7 @@ export class AuthService {
  return this.http.post<AuthResponse>(this.base + '/register', req);
  }
  saveToken(res: AuthResponse) {
+    console.log('reftrack_token', res.token);
  localStorage.setItem('reftrack_token', res.token);
  localStorage.setItem('reftrack_userId', res.userId);
  this.isLoggedIn.set(true);

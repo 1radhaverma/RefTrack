@@ -593,7 +593,7 @@
             "type": "string",
             "nullable": true
           },
-          "domain": {
+          "careerPageUrl": {
             "type": "string",
             "nullable": true
           },

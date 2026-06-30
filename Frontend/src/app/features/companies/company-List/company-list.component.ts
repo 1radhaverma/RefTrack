@@ -46,7 +46,7 @@ import { CompanyService } from '../../../core/services/company.service';
               </tr>
             </thead>
             <tbody>
-              @for (c of svc.companies.value() ?? []; track c.id) {
+              @for (c of svc.companies.value(); track c.id) {
                 <tr class="border-b border-gray-100 hover:bg-gray-50">
                   <td class="px-4 py-3 font-medium">{{ c.name }}</td>
                   <td class="px-4 py-3">
